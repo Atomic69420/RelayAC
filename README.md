@@ -22,6 +22,12 @@ Things we will detect in the future:
 - Device Block [No Type] (Not really a detection but allows you to block any device you wish to, untested)
 - Invalid Skin Data [No Type] (Detects bot-like skin data as well as invisible skins)
 
+## Config Docs
+- realmcode: the realm code of the realm you want to create the relay on.
+- prefix: the title of all kick messages that the relay does. the title is encased in brackets like so [prefix] if not configured it will default to Server.
+- discord: the discord code of your discord if you have one if not it will default to None
+- debug: this is used to debug packets sent to the server and from the server this will flood your console if you use this and is only meant for testing purposes. serverbound is packets sent to the realm by players connected to the relay and clientbound is packets sent from the server to the players.
+
 # Notice
 Since this uses bedrock protocol you will need to wait until someone on their end posts a update to bedrock protocol when a new minecraft version comes out. To do this either wait until I update it or run update.bat.
 Some things do not work in this that do in normal minecraft such as titles. This will most likely be fixed if the bedrock protocol devs decide to fix it.

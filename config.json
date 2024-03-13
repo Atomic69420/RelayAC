@@ -2,6 +2,11 @@
     "config": {
 "realmcode": "your realm code",
 "prefix": "the prefix of the bot this will appear in kick messages",
-"discord": "the discord link of your discord this will appear in kick messages"
+"discord": "the discord link of your discord this will appear in kick messages",
+"debug": {
+    "enabled": true,
+    "serverbound": false,
+    "clientbound": false
+}
     }
 }
