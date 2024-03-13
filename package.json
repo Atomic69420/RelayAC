@@ -1,0 +1,23 @@
+{
+  "name": "relay-anticheat",
+  "version": "1.0.0",
+  "description": "A project made to protect your realm by using bedrock protocol's relay",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atomic69420/RelayAC.git"
+  },
+  "author": "Atomic69420, AtomicTM6850 or ip_atomic",
+  "license": "CC-BY-NC-ND-4.0",
+  "bugs": {
+    "url": "https://github.com/Atomic69420/RelayAC/issues"
+  },
+  "homepage": "https://github.com/Atomic69420/RelayAC#readme",
+  "dependencies": {
+    "bedrock-protocol": "^3.34.0",
+    "colors": "^1.4.0"
+  }
+}
