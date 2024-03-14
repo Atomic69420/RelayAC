@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Atomic69420/RelayAC#readme",
   "dependencies": {
-    "bedrock-protocol": "^3.34.0",
+    "bedrock-protocol": "^3.35.0",
     "colors": "^1.4.0"
   }
 }
