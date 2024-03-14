@@ -4,7 +4,7 @@
 "prefix": "the prefix of the bot this will appear in kick messages",
 "discord": "the discord link of your discord this will appear in kick messages",
 "debug": {
-    "enabled": true,
+    "enabled": false,
     "serverbound": false,
     "clientbound": false
 }
