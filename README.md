@@ -21,7 +21,8 @@ The list of things we detect:
 - Bad Packet [T4] (Blocks a request to the server asking to fly this is used by hack clients for some fly types and kicks the player using it, tested)
 - Too Many Attack Packets [No Type] (Blocks and kicks the player if they exceed the cpslimit set in the config, tested)
 - Too Many Chat Messages [No Type] (Blocks and kicks the player if they exceed the textperseclimit set in the config, untested)
-Things we will detect in the future:
+
+- Things we will detect in the future:
 
 - External [No Type] (Blocks external messages that are used in most spam bots, untested)
 - Device Block [No Type] (Not really a detection but allows you to block any device you wish to, untested)
