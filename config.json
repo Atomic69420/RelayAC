@@ -3,6 +3,8 @@
 "realmcode": "your realm code",
 "prefix": "the prefix of the bot this will appear in kick messages",
 "discord": "the discord link of your discord this will appear in kick messages",
+"cpslimit": 20,
+"textperseclimit": 10,
 "debug": {
     "enabled": false,
     "serverbound": false,
