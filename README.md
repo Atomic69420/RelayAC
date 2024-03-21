@@ -15,12 +15,15 @@ The list of things we detect:
 
 - Bots [T1] (Blocks all bots currently known as unbypassable) Side note it also blocks nintendo players
 - Bots [T2] (Blocks sub clients currently untested)
-
+- Bad Packet [T1] (Blocks the use of /me, /tell, /w or /whisper and /msg commands that are used by most spam bots and kicks the player using it, tested)
+- Bad Packet [T2] (Blocks the horion type 3 crasher and kicks the player using it, tested)
+- Bad Packet [T3] (Blocks the move player packet which is used by hack clients and Crashary 2 and kicks the player using it, tested)
+- Bad Packet [T4] (Blocks a request to the server asking to fly this is used by hack clients for some fly types and kicks the player using it, tested)
+- Too Many Attack Packets [No Type] (Blocks and kicks the player if they exceed the cpslimit set in the config, tested)
+- Too Many Chat Messages [No Type] (Blocks and kicks the player if they exceed the textperseclimit set in the config, untested)
 Things we will detect in the future:
 
-- Horion Crasher Type 3 [No Type] (Blocks the horion type 3 crasher and kicks the player using it, untested)
 - External [No Type] (Blocks external messages that are used in most spam bots, untested)
-- /me, /tell, /w or /whisper and /msg [No Type] (Blocks the use of these commands that are used by most spam bots, untested)
 - Device Block [No Type] (Not really a detection but allows you to block any device you wish to, untested)
 - Invalid Skin Data [No Type] (Detects bot-like skin data as well as invisible skins)
 
@@ -28,6 +31,8 @@ Things we will detect in the future:
 - realmcode: the realm code of the realm you want to create the relay on.
 - prefix: the title of all kick messages that the relay does. the title is encased in brackets like so [prefix] if not configured it will default to Server.
 - discord: the discord code of your discord if you have one if not it will default to None
+- cpslimit: the clicks per second limit for everyone if they click faster than the set number they will be kicked the default value is 20
+- textperseclimit: the amount of chat messages a person can send within a second before getting kicked the default value is 10
 - debug: this is used to debug packets sent to the server and from the server this will flood your console if you use this and is only meant for testing purposes. serverbound is packets sent to the realm by players connected to the relay and clientbound is packets sent from the server to the players.
 
 # Notice
