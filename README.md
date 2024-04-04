@@ -13,7 +13,7 @@ Please read the license file which contains a Creative Commons CC BY-NC-ND 4.0 l
 
 The list of things we detect:
 
-- Bots [T1] (Blocks all bots currently known as unbypassable) Side note it also blocks nintendo players
+- Bots [T1] (Blocks all bots currently known as bypassable) Side note it also blocks nintendo players
 - Bots [T2] (Blocks sub clients currently untested)
 - Bad Packet [T1] (Blocks the use of /me, /tell, /w or /whisper and /msg commands that are used by most spam bots and kicks the player using it, tested)
 - Bad Packet [T2] (Blocks the horion type 3 crasher and kicks the player using it, tested)
