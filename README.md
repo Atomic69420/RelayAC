@@ -19,6 +19,7 @@ The list of things we detect:
 - Bad Packet [T2] (Blocks the horion type 3 crasher and kicks the player using it, tested)
 - Bad Packet [T3] (Blocks the move player packet which is used by hack clients and Crashary 2 and kicks the player using it, tested)
 - Bad Packet [T4] (Blocks a request to the server asking to fly this is used by hack clients for some fly types and kicks the player using it, tested)
+- Bad Packet [T5] (Blocks a respawn action when not dead this is used in hack clients for the module NoFall and kicks the player using it, tested)
 - Too Many Attack Packets [No Type] (Blocks and kicks the player if they exceed the cpslimit set in the config, tested)
 - Too Many Chat Messages [No Type] (Blocks and kicks the player if they exceed the textperseclimit set in the config, untested)
 
