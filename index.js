@@ -41,7 +41,12 @@ setInterval(() => {
         }
 relay.on('connect', player => {
     player.on('serverbound', ({ name, params }, des) => {
-
+      if (name === "sub_client_login") {
+        des.canceled = true
+          console.log(`${prefix}`.bold.blue + `\n[-]`.bold.green + `\nnull`.bold.red + `\nSuspected Bot [T2]: The user sent a sub client login packet self explanatory`.bold.red);
+          player.disconnect(`[${prefix}]\nReason: Suspected Bot [T2]\nDiscord: ${discord}`)
+          player.close()
+      }
 
       if (name === "text") {
          nt++;
@@ -127,11 +132,6 @@ if (blacklistedcmds.includes(command)) {
    if (packet.user.titleId === "2047319603") {
     console.log(`${prefix}`.bold.blue + `\n[-]`.bold.green + `\n${packet.user.displayName}`.bold.red + `\nSuspected Bot [T1]: The user was a bot`.bold.red);
     player.disconnect(`[${prefix}]\nReason: Suspected Bot [T1]\nDiscord: ${discord}`)
-    player.close()
-   }
-   if (packet.user.XUID === 0) {
-    console.log(`${prefix}`.bold.blue + `\n[-]`.bold.green + `\n${packet.user.displayName}`.bold.red + `\nSuspected Bot [T2]: The user was a subclient`.bold.red);
-    player.disconnect(`[${prefix}]\nReason: Suspected Bot [T2]\nDiscord: ${discord}`)
     player.close()
    }
   })
