@@ -57,11 +57,6 @@ relay.on('connect', player => {
           player.close()
          }
       }
-      if (name === "player_auth_input") {
-       if (params.input_data._value !== 0n) {
-        console.log(`Server Bound Packet: ${name}`, params)
-       }
-       }
       if (name === "request_ability") {
          if (params.ability === "flying") {
           des.canceled = true
